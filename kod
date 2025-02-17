@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="Женя Трофимов, Комната культуры - Ночь.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    <div class="container">
+        <h1>Приглашаем на нашу свадьбу!</h1>
+        <h2>Дорогие гости, ждём вас!</h2>
+        <div id="countdown"></div>
+        <form id="rsvp-form" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="attendance">Вы будете присутствовать?</label>
+            <select id="attendance" name="attendance">
+                <option>Да</option>
+                <option>Нет</option>
+            </select>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="gallery">
+            <img src="photo1.jpg" class="animated">
+            <img src="photo2.jpg" class="animated">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
